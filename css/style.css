@@ -1,0 +1,601 @@
+/* Todo: Google fonts start */
+@import url('https://fonts.googleapis.com/css2?family=Baskervville+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+/* Todo: Google fonts end */
+
+/* Todo: Common css start */
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    max-width: 100%;
+}
+
+img {
+    vertical-align: middle;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+h2 {
+    font-size: 34px;
+    font-weight: 700;
+    font-family: 'Baskervville SC', serif;
+}
+
+.btn {
+    width: 180px;
+    height: 45px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 22px;
+    display: inline-block;
+    transition: all linear 0.4s;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    max-width: 1299px;
+    margin: 0 auto;
+}
+/* Todo: Common css end */
+
+/* Todo: Header part css start */
+#header_part {
+    background-color: #000316;
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.header_container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 299px;
+}
+
+.logo a {
+    color: #1d092b;
+    font-size: 60px;
+    font-weight: 900;
+    font-family: 'Baskervville SC', serif;
+    text-shadow: 4px -2px 4px crimson;
+    line-height: 100px;
+}
+
+.navbar {
+    width: 1000px;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: end;
+    column-gap: 50px;
+}
+
+.navbar ul li a {
+    color: #ddd;
+    font-size: 14px;
+    font-weight: 900;
+    line-height: 100px;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    transition: all linear 0.4s;
+    text-shadow: 4px 0 4px crimson;
+}
+
+.navbar ul li .active {
+    color: crimson;
+    text-shadow: none;
+}
+
+.navbar ul li a:hover {
+    color: crimson;
+    text-shadow: none;
+}
+/* Todo: Header part css end */
+
+/* Todo: Banner part css start */
+#banner_part {
+    padding: 80px 0;
+    background-image: linear-gradient(30deg, rgba(0, 3, 22, 0.8), transparent),
+        url('../assets/images/banner.avif');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    text-align: center;
+}
+
+.banner_container {
+    display: flex;
+    justify-content: end;
+}
+
+.banner_text {
+    width: 65%;
+}
+
+.banner_text h1 {
+    color: #3b193b;
+    font-size: 38px;
+    font-weight: 300;
+    line-height: 98px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.banner_text h1 > span {
+    display: block;
+    color: #1d092b;
+    font-size: 154px;
+    font-weight: 900;
+    font-family: 'Baskervville SC', serif;
+    text-shadow: 4px -2px 4px crimson;
+}
+
+.banner_text p {
+    color: #eee;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 1px;
+    padding: 24px 10% 70px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.banner_btn a {
+    color: #ddd;
+    margin: 0px 10px;
+    border: 1px solid #3b193b;
+}
+
+.banner_btn a:hover {
+    box-shadow: 1px -1px 8px crimson;
+    background-color: #3b193b;
+    border-color: #3b193b;
+}
+/* Todo: Banner part css end */
+
+/* Todo: Music part css start */
+#music_part {
+    padding: 80px 0;
+    background-color: #ddd;
+}
+
+.music_head {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #999;
+    padding-bottom: 10px;
+}
+
+.music_text h2 {
+    color: #222;
+    display: inline;
+}
+
+.music_search form select {
+    color: #333;
+    padding: 15px;
+    margin-right: 15px;
+    border: 0;
+    background: transparent;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.music_search form input {
+    background: #f1f1f1;
+    border: 0;
+    font-size: 12px;
+    font-weight: 500;
+    font-family: 'Open Sans', sans-serif;
+    padding: 10px;
+    width: 250px;
+    border-left: 1px solid #c5c1c1;
+}
+
+.music_search form button {
+    padding: 10px 10px 10px;
+    border: 0;
+    background: #f1f1f1;
+    margin-left: -4px;
+}
+
+.music_search form button > img {
+    width: 15px;
+    cursor: pointer;
+}
+
+.music_inner {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.music_inner video {
+    width: 31%;
+    cursor: pointer;
+    margin: 30px 15px 0;
+}
+
+.music_btn a {
+    color: #222;
+    border: 1px solid #222;
+    margin: 60px auto 0;
+    width: 220px;
+    display: block;
+}
+
+.music_btn a:hover {
+    color: #ddd;
+    box-shadow: 2px 3px 8px #000;
+    background-color: #222;
+}
+/* Todo: Music part css end */
+
+/* Todo: Video gallery part css start */
+#video_gallery_part {
+    background-image: linear-gradient(-275deg, rgba(0, 0, 0, 0.6), transparent),
+        url(../assets/images/video_gallery_bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 65px 0 100px;
+    text-align: center;
+}
+
+.gallery_head h2 {
+    color: #fff;
+    font-size: 48px;
+}
+
+.gallery_head > iframe {
+    width: 75%;
+    height: 520px;
+    margin-top: 40px;
+    border-radius: 12px;
+    box-shadow: 0px 0 10px 3px rgba(220, 20, 60, 0.8);
+}
+
+.gallery_inner {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery_inner > .gallery {
+    width: 31.79%;
+    margin: 60px 10px 0;
+}
+
+.gallery_inner .gallery > iframe {
+    width: 100%;
+    height: 230px;
+    transition: all linear 0.4s;
+    border: 1px solid rgba(34, 34, 34, 0.9);
+}
+
+.gallery_inner .gallery > iframe:hover {
+    box-shadow: 0px 0 10px 4px rgba(220, 20, 60, 0.4);
+}
+
+.gallery_btn a {
+    color: #ddd;
+    border-radius: 8px;
+    border: 2px solid #3b193b;
+    margin-top: 70px;
+    width: 220px;
+}
+
+.gallery_btn a:hover {
+    box-shadow: 1px -1px 8px crimson;
+    background-color: #3b193b;
+    border-color: #3b193b;
+}
+/* Todo: Video gallery part css end */
+
+/* Todo: Audio part css start */
+#audio_part {
+    padding: 60px 0 0;
+    background-color: #f7f7fa;
+    margin-bottom: -4px;
+}
+
+.audio_head {
+    display: flex;
+    border-bottom: 1px solid #999;
+}
+
+.audio_head img {
+    width: 225px;
+    margin-top: -90px;
+    margin-left: 10px;
+    margin-bottom: -80px;
+}
+
+.audio_list ul {
+    padding-top: 30px;
+}
+
+.audio_list ul > li {
+    padding: 10px 30px;
+}
+
+.audio_list img {
+    width: 35px;
+}
+
+.audio_list span {
+    color: #000;
+    font-weight: 600;
+    font-style: italic;
+    font-family: 'Open Sans', sans-serif;
+    padding: 0px 40px 0 10px;
+}
+
+.audio_list audio {
+    background-color: rgba(158, 36, 245, 0.6);
+    width: 83%;
+    margin-bottom: -13px;
+    height: 35px;
+}
+
+.audio_btn a {
+    border: none;
+    color: #222;
+    display: block;
+    margin: 60px auto 0;
+    letter-spacing: 2px;
+}
+
+.audio_btn a:hover {
+    color: #ddd;
+}
+
+.audio_bar {
+    display: flex;
+}
+
+.audio_bar img {
+    width: 50%;
+}
+/* Todo: Audio part css end */
+
+/* Todo: Event part css start */
+#event_part {
+    padding-bottom: 60px;
+    background-color: #f7f7fa;
+    text-align: center;
+}
+
+.event_posters {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.event_posters .poster {
+    width: 31.79%;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.event_posters .poster > img {
+    width: 100%;
+    height: 450px;
+}
+/* Todo: Event part css end */
+
+/* Todo: Subscribe part css start */
+#subscribe_part {
+    background-image: linear-gradient(
+            to top,
+            rgba(0, 0, 0, 0.9),
+            rgba(59, 25, 59, 0.4)
+        ),
+        url(../assets/images/subscribe_bar.gif);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 80px 0;
+    text-align: center;
+}
+
+#subscribe_part h2 {
+    color: #fff;
+    font-size: 48px;
+}
+
+#subscribe_part h2 > span {
+    display: block;
+}
+
+#subscribe_part form input {
+    color: #f1f1f1;
+    width: 600px;
+    height: 70px;
+    display: block;
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+    border-radius: 4px;
+    margin: 60px auto 50px;
+    border: 1px solid #000;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+#subscribe_part form button {
+    height: 50px;
+    width: 170px;
+    border: none;
+    color: #222;
+    font-size: 18px;
+    font-weight: 500;
+    background: #fff;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 4px;
+    cursor: pointer;
+}
+/* Todo: Subscribe part css end */
+
+/* Todo: Footer part css start */
+.footer_head h2 {
+    text-align: center;
+    padding: 60px;
+}
+
+.footer_body {
+    display: flex;
+    column-gap: 90px;
+    flex-wrap: wrap;
+    padding-bottom: 60px;
+}
+
+/* Todo: Footer contact css start */
+.footer_contact {
+    width: 31%;
+    padding: 15px;
+    background-color: #ecf0f3;
+    border: 3px solid #f1f1f1;
+    box-shadow: 3px 4px 16px #666;
+}
+
+.footer_contact img {
+    width: 100%;
+}
+
+.footer_contact h4 {
+    color: #222;
+    font-size: 28px;
+    font-weight: 500;
+    font-family: 'Open Sans', sans-serif;
+    padding-top: 12px;
+}
+
+.footer_contact small {
+    color: #666;
+    font-size: 13px;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+    padding: 0 4px 20px;
+    display: block;
+}
+
+.footer_contact p {
+    color: #444;
+    font-size: 14px;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+    padding-right: 54px;
+    padding-bottom: 10px;
+    line-height: 24px;
+    letter-spacing: 1px;
+}
+
+.footer_links a img {
+    width: 30px;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+/* Todo: Footer contact css end */
+
+/* Todo: Footer form css start */
+.footer_form {
+    width: 62%;
+    padding: 40px 80px 80px;
+    background-color: #ecf0f3;
+    border: 3px solid #f1f1f1;
+    box-shadow: 3px 4px 16px #666;
+}
+
+.form_input {
+    display: flex;
+    column-gap: 20px;
+}
+
+.form_input .form_input_child {
+    width: 100%;
+}
+
+.footer_form input {
+    width: 100%;
+    height: 40px;
+    padding: 15px;
+    color: #222;
+    font-size: 14px;
+    margin-top: 12px;
+    font-weight: 500;
+    background: #fff;
+    font-family: 'Open Sans', sans-serif;
+    border: 1px solid rgba(153, 153, 153, 0.3);
+}
+
+.footer_form label {
+    color: #666;
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 2px;
+    padding-top: 36px;
+}
+
+.footer_form textarea {
+    width: 100%;
+    height: 140px;
+    padding: 15px;
+    color: #222;
+    font-size: 14px;
+    font-weight: 500;
+    background: #fff;
+    margin: 14px 0 50px;
+    font-family: 'Open Sans', sans-serif;
+    border: 1px solid rgba(153, 153, 153, 0.3);
+    resize: none;
+}
+
+.footer_form button {
+    width: 100%;
+    height: 50px;
+    color: #ddd;
+    font-size: 18px;
+    background: #222;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+/* Todo: Footer form css end */
+
+.footer_btm {
+    height: 50px;
+    text-align: center;
+    background-color: #3b193b;
+}
+
+.footer_btm small {
+    font-size: 13px;
+    letter-spacing: 1px;
+    line-height: 50px;
+    color: #ddd;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Todo: Footer part css end */
